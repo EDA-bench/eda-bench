@@ -1,0 +1,69 @@
+[project]
+name = "eda-bench"
+version = "0.1.0"
+description = "Composable KiCad benchmark for EDA-capable language model harnesses"
+readme = "README.md"
+requires-python = "==3.11.*"
+dependencies = [
+  "huggingface_hub>=0.35.0",
+]
+
+[dependency-groups]
+dev = [
+  "build>=1.3.0",
+  "pytest>=8.4.0",
+  "ruff>=0.14.0",
+]
+
+[project.scripts]
+eval-harness = "bench.runner:eval_harness_main"
+eval-matrix = "bench.runner:eval_matrix_main"
+eval-accounting = "bench.accounting:main"
+list-harnesses = "bench.runner:list_harnesses_main"
+list-tasks = "bench.runner:list_tasks_main"
+publish-task-packs = "tasks.task_packs:publish_task_packs_main"
+update-website = "website.update_website:main"
+verify-task-canaries = "tasks.task_packs:verify_task_canaries_main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+dev-mode-dirs = ["."]
+include = [
+  "README.md",
+  "LICENSES.md",
+  "docs/**",
+  "Dockerfile",
+  "pyproject.toml",
+  "bench/**",
+  "harnesses/**",
+  "tasks/**",
+  "tests/**",
+  "website/**",
+]
+exclude = [
+  ".env",
+  ".git/**",
+  ".tmp/**",
+  ".pytest_cache/**",
+  ".ruff_cache/**",
+  ".venv/**",
+  "__pycache__/**",
+  "source_snapshot/**",
+  "canaries/**",
+  "tasks/*/gold/**",
+  "tasks/**/source_snapshot/**",
+  "tasks/**/canaries/**",
+  "third_party/upstream_designs/**",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+extend-exclude = [
+  "third_party",
+]
