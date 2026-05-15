@@ -1,8 +1,8 @@
 {
-  "repo_id": "eda-bench-neurips-2026/eda-bench-tasks",
+  "repo_id": "oof-baroomf/eda-bench-tasks",
   "path_prefix": "task-packs/v2",
   "full_path_prefix": "full-task-packs/v2",
-  "revision": "c64b9169d6d8c0d73614e14c7050cf036aeb1559",
+  "revision": "38bad28072e5c09657ef15fd56f9eb24841eaa48",
   "generated_at": "2026-05-07T06:32:57+00:00",
   "task_ids": [
     "adau1452_dsp_core",

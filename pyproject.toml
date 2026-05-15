@@ -34,7 +34,6 @@ dev-mode-dirs = ["."]
 include = [
   "README.md",
   "LICENSES.md",
-  "docs/**",
   "Dockerfile",
   "pyproject.toml",
   "bench/**",

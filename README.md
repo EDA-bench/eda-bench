@@ -5,9 +5,12 @@ that produce KiCad PCB projects. The code runs model harnesses in a pinned Docke
 environment, downloads frozen task packs from Hugging Face, grades submitted
 KiCad projects with explicit I/O simulation oracles, and uploads run provenance.
 
-This repository contains the public benchmark code artifact plus paper and
-result artifacts. It does not vendor reference PCB projects, task-pack archives,
-or grading answers.
+This repository contains the public benchmark code artifact, paper PDF, and
+small media/result artifacts. The task dataset and dataset metadata live on
+Hugging Face at
+[`oof-baroomf/eda-bench-tasks`](https://huggingface.co/datasets/oof-baroomf/eda-bench-tasks).
+This repository does not vendor reference PCB projects, task-pack archives,
+grading answers, or duplicate dataset metadata.
 
 ## Contents
 
@@ -21,10 +24,10 @@ or grading answers.
   by the released code
 - `paper/main.pdf`: public paper PDF only; LaTeX sources are intentionally not
   included in this repository
-- `docs/`: result notes, oracle validation, baseline regrade summaries, and
-  release policy notes
 - `artifacts/`: small public media/result artifacts used by the paper
-- `DATA_CARD.md`, `croissant.json`, `task_catalog.json`: public dataset metadata
+
+Dataset metadata such as `DATA_CARD.md`, `croissant.json`, and
+`task_catalog.json` is kept in the Hugging Face dataset, not duplicated here.
 
 ## Reproducible Setup
 
@@ -51,8 +54,8 @@ the harnesses you intend to run. At minimum, a Codex run needs:
 The task packs are resolved from `tasks/task_pack_manifest.json`. That manifest
 pins:
 
-- dataset repo: `eda-bench-neurips-2026/eda-bench-tasks`
-- task-pack revision: `c64b9169d6d8c0d73614e14c7050cf036aeb1559`
+- dataset repo: `oof-baroomf/eda-bench-tasks`
+- task-pack revision: `38bad28072e5c09657ef15fd56f9eb24841eaa48`
 - runtime path prefix: `task-packs/v2`
 - full grader path prefix: `full-task-packs/v2`
 
