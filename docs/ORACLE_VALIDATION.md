@@ -33,9 +33,9 @@ of the default oracle:
 
 | Control | Result |
 |---|---|
-| Pass canaries | 40/40 frozen reference projects score 1.0 |
-| Fail canaries | 40/40 structural fail canaries score at most 0.15 |
-| Generated mutation canaries | 162 generated mutations across 40/40 tasks pass below the 0.75 threshold |
+| Pass canaries | 35/35 released frozen reference projects score 1.0 |
+| Fail canaries | 35/35 released structural fail canaries score at most 0.15 |
+| Generated mutation canaries | 162 generated mutations across the original 40-task candidate set pass below the 0.75 threshold |
 | Fail threshold | 0.75 |
 | Missing oracle behavior | unsupported task returns 0.0 |
 | Public package boundary | tests enforce exclusion of `tasks/*/gold/**`, upstream snapshots, and canary submissions from wheels/sdists |
@@ -52,8 +52,8 @@ The task-pack builder now stages generated mutation canaries under
 - external power/signal pads tied to ground;
 - missing high-speed-like routes for high-speed carrier tasks.
 
-The task-pack builder now also stages two additional generic mutation families
-for the next task-pack rebuild:
+Two additional generic mutation families are implemented experimentally, but are
+not part of the validated release-canary set:
 
 - swapped external connector pins;
 - signal-bearing active devices with power/ground pads disconnected.

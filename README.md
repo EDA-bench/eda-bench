@@ -5,9 +5,9 @@ that produce KiCad PCB projects. The code runs model harnesses in a pinned Docke
 environment, downloads frozen task packs from Hugging Face, grades submitted
 KiCad projects with explicit I/O simulation oracles, and uploads run provenance.
 
-This repository is the code artifact only. It does not vendor reference PCB
-projects, task-pack archives, grading answers, or dataset metadata submission
-files.
+This repository contains the public benchmark code artifact plus paper and
+result artifacts. It does not vendor reference PCB projects, task-pack archives,
+or grading answers.
 
 ## Contents
 
@@ -19,6 +19,12 @@ files.
 - `website/`: static leaderboard generation from uploaded provenance
 - `tasks/task_pack_manifest.json`: pinned Hugging Face task-pack revision used
   by the released code
+- `paper/main.pdf`: public paper PDF only; LaTeX sources are intentionally not
+  included in this repository
+- `docs/`: result notes, oracle validation, baseline regrade summaries, and
+  release policy notes
+- `artifacts/`: small public media/result artifacts used by the paper
+- `DATA_CARD.md`, `croissant.json`, `task_catalog.json`: public dataset metadata
 
 ## Reproducible Setup
 
