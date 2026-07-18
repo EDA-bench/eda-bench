@@ -1,0 +1,7 @@
+*
+!dataset/
+!dataset/**
+!verifier/
+!verifier/**
+!images/
+!images/verifier.Dockerfile

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "task_id": "usb_c_female_breakout",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "gpio",
+    "power",
+    "usb"
+  ],
+  "scored_interface_families": [
+    "gpio",
+    "power",
+    "usb"
+  ],
+  "scored_routed_interface_families": [
+    "gpio",
+    "power",
+    "usb"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 4
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 4
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 4
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "gpio",
+      "power",
+      "usb"
+    ],
+    "routed_required_families": [
+      "gpio",
+      "power",
+      "usb"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 3
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 4
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 3
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 4
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 1.0,
+    "score": 1.0
+  }
+}

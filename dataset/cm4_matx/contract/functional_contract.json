@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "task_id": "cm4_matx",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "fan",
+    "pcie",
+    "power",
+    "rtc",
+    "usb"
+  ],
+  "scored_interface_families": [
+    "fan",
+    "pcie",
+    "power"
+  ],
+  "scored_routed_interface_families": [
+    "power"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "camera"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "eeprom"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "ethernet"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "fan"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 390
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "pcie"
+      ],
+      "count": 39
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 19
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 14
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 16
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "camera"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "eeprom"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "ethernet"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "fan"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 390
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "pcie"
+      ],
+      "count": 39
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 19
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 14
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 16
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "power"
+      ],
+      "count": 3
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "fan",
+      "pcie",
+      "power"
+    ],
+    "routed_required_families": [
+      "power"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "camera"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "debug"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "eeprom"
+        ],
+        "count": 3
+      },
+      {
+        "key": [
+          "ethernet"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "fan"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 390
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 6
+      },
+      {
+        "key": [
+          "pcie"
+        ],
+        "count": 39
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 19
+      },
+      {
+        "key": [
+          "sdcard"
+        ],
+        "count": 14
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 16
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "power"
+        ],
+        "count": 3
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 0.006564551422319475,
+    "score": 1.0
+  }
+}

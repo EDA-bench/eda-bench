@@ -1,0 +1,153 @@
+[dataset]
+name = "eda-bench/eda-bench"
+description = "Executable KiCad design tasks with deterministic electrical and physical verification."
+keywords = [ "eda", "kicad", "agent-evaluation",]
+[[dataset.authors]]
+name = "EDA-bench authors"
+
+
+[[tasks]]
+name = "eda-bench/adau1452_dsp_core"
+digest = "sha256:1203dad369afb3ec5b6274157e66ea166bbbe9a06dd467c252c82753cb9b85bd"
+
+[[tasks]]
+name = "eda-bench/arduino_nano_board"
+digest = "sha256:f31dae4f620919ff98dee86a6d45f55b9f1d42aa9129e4170ded2fb150cf113a"
+
+[[tasks]]
+name = "eda-bench/asac_fc_rev_b"
+digest = "sha256:2f4870f133f9c5235e10a3ae7f6c6d7efa570f9cec1accf3e3e7154bb943596e"
+
+[[tasks]]
+name = "eda-bench/bq24295_power_path_board"
+digest = "sha256:e182246928ec5ac6e125e571bf3c1691f28b2df497e94ffcae8a308d8cb09385"
+
+[[tasks]]
+name = "eda-bench/cm4_baseboard"
+digest = "sha256:1a2326ef25c0ec666fb0efb8a3b3b017ad155d44a6d1a7bf9eae9d04c7c3ceca"
+
+[[tasks]]
+name = "eda-bench/cm4_carrier_net"
+digest = "sha256:c7d84936c3d3d290174d68dd8657cb3fc8439cf01294e7e438860f9285298e7b"
+
+[[tasks]]
+name = "eda-bench/cm4_csi_adapter"
+digest = "sha256:f3addd7f27e0b9a0a3cf3c604a23677648c4432e5c705e6c834d6f7978e35f7e"
+
+[[tasks]]
+name = "eda-bench/cm4_lvds_adapter"
+digest = "sha256:c3e69e7adbf095389d0edd020db858ae37367f70a09557fc98f96591ba5c0f0a"
+
+[[tasks]]
+name = "eda-bench/cm4_matx"
+digest = "sha256:865b63363cc8d45d8422bf419b3711960ad6be8a891d13ff6d354bca15af3d0f"
+
+[[tasks]]
+name = "eda-bench/core_v_mcu_devkit"
+digest = "sha256:5c74060394d1a393e654231128bfcd7ab8b726f492d091ade5593359d677ffd9"
+
+[[tasks]]
+name = "eda-bench/ftdi_toolkit"
+digest = "sha256:85a921ef784e2a4bf47a819a5e6a0175feb49c6ca312000da3043fe6f4e6ae56"
+
+[[tasks]]
+name = "eda-bench/gimme_danger"
+digest = "sha256:0ad47454f4e5df8740b9bd84c61308083d129940ec78d200c1fd5cecca235aed"
+
+[[tasks]]
+name = "eda-bench/i2s_audio_phat"
+digest = "sha256:d06979018379aed97eebf371c792f40ef4b9e4519bd56234c17b1a51ad47cecc"
+
+[[tasks]]
+name = "eda-bench/ict_baseboard"
+digest = "sha256:8e34443328d0ef032122e8973ae8ec4fa3b185eb409f341cd7395fe40f967293"
+
+[[tasks]]
+name = "eda-bench/jetson_orin_baseboard"
+digest = "sha256:17ca041951b2009a082e2e53c84908c9a4ecdba9bc3b61f89bef585d9e2b13c6"
+
+[[tasks]]
+name = "eda-bench/logic_level_converter_board"
+digest = "sha256:988f83d56b85663d36be56979fe7836d750bc57b9ba29985b8452916d1834818"
+
+[[tasks]]
+name = "eda-bench/lora_modem"
+digest = "sha256:64a9cf781691e952668574324744c73aaa2974b33d79c7b40b5a69bb65db3c8b"
+
+[[tasks]]
+name = "eda-bench/m2_5g_usb3_interface"
+digest = "sha256:a2e60b97c9e04866d92120f0379f358f941dd3398edaf706c2076485be33b0eb"
+
+[[tasks]]
+name = "eda-bench/m2_pcie_adapter"
+digest = "sha256:fec821c8c5e7540155c23d1392c500951e4dee03400ed9bd2fa44711f7c5f8b4"
+
+[[tasks]]
+name = "eda-bench/mcp23017_breakout"
+digest = "sha256:dee36fcec5b920e037e9822fe451882df2d3e9c7a6a59696bfec8d4c1dd93af1"
+
+[[tasks]]
+name = "eda-bench/mitayi_pico_d1"
+digest = "sha256:b074ea46d73dae2d4c4c8a0e0443811d0116c3dd3d23bcf974d929aed978e6db"
+
+[[tasks]]
+name = "eda-bench/mosaic_hat"
+digest = "sha256:8a0806bcd36010870c8ff8e7ff8b5f9ab9800b57b922c97aae423a7e9a02777e"
+
+[[tasks]]
+name = "eda-bench/mowi"
+digest = "sha256:2dd4d395c8bf94bc731379c6b1938c6d67e5d32cb6dd8f216e945b26216039f5"
+
+[[tasks]]
+name = "eda-bench/nanoupdi"
+digest = "sha256:44cf94b904985a942aee0b38b3d1d48b777b0c2856bc289a1d6c93df321aca26"
+
+[[tasks]]
+name = "eda-bench/openlst_ref_hw"
+digest = "sha256:2c1c0d4811b534e1c1ac5da30b2f6f3ae6e96383489b96b53bf5ff2e1d58bc93"
+
+[[tasks]]
+name = "eda-bench/ov9281_dual_camera_board"
+digest = "sha256:f353467b4f682505e085240a971dd70801b9453f85cd9bd3309ea3b3971e02fa"
+
+[[tasks]]
+name = "eda-bench/pi485"
+digest = "sha256:0c16bcbd02c54fa698559c4a0b3554fe7e758ea2110efd2e476bd3db5c1c9138"
+
+[[tasks]]
+name = "eda-bench/picopd"
+digest = "sha256:c037d5262f55e1b5af87e7f3abf75fe3f7c79e22b230f7fbbd497931985bc749"
+
+[[tasks]]
+name = "eda-bench/quanta75_pico"
+digest = "sha256:beae51891fbf2a7cd61be1fa8aa0aa6058bf39ce18fc92bb315c986e7a563d35"
+
+[[tasks]]
+name = "eda-bench/robotont_driver_board"
+digest = "sha256:3c7c0e1c4c11def4aaf4a505e2ea5f7256c1dc186b2f1686b226c385e0abd21f"
+
+[[tasks]]
+name = "eda-bench/rp2040_dmxsun_ioboard"
+digest = "sha256:528c538f851b25f9839eaa22aeae42dc5de6e00ad60bb3091d4aed96084b0b5d"
+
+[[tasks]]
+name = "eda-bench/rs485_transceiver_breakout"
+digest = "sha256:1ea84aa740de3134931e989322b4d2a838db93dbaeb6900444457898301e55bc"
+
+[[tasks]]
+name = "eda-bench/usb_c_female_breakout"
+digest = "sha256:c90efe2a5526681028ba1970ef50a28fa035e31d69a472ad20db322028b56661"
+
+[[tasks]]
+name = "eda-bench/usb_uart_ch340c"
+digest = "sha256:bae37ec95e5339be60d020d12d33f11a02842a6e955e438ce22f62ffc7ca77c8"
+
+[[tasks]]
+name = "eda-bench/zynq_som"
+digest = "sha256:876466777554b56bfa750a88045b0c0d64e76230dd5504881e3e31583eddb4a6"
+
+
+[[files]]
+path = "metric.py"
+digest = "sha256:308c6b2ed9c4ea6e6716e737610ef69f991697867dfcde9ae8d1e62e80bf93d3"
+

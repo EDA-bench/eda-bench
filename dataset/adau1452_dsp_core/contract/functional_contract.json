@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "task_id": "adau1452_dsp_core",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "audio",
+    "debug",
+    "eeprom",
+    "power",
+    "spi"
+  ],
+  "scored_interface_families": [
+    "power",
+    "spi"
+  ],
+  "scored_routed_interface_families": [
+    "power",
+    "spi"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 52
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "spi"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 1
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 52
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "spi"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 1
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 52
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "spi"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 1
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "power",
+      "spi"
+    ],
+    "routed_required_families": [
+      "power",
+      "spi"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 52
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 3
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "spi"
+        ],
+        "count": 7
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 1
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 52
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 3
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "spi"
+        ],
+        "count": 7
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 1
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 1.0,
+    "score": 1.0
+  }
+}

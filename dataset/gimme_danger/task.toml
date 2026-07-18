@@ -1,0 +1,47 @@
+schema_version = "1.3"
+artifacts = ["/workspace/final_project"]
+
+[task]
+name = "eda-bench/gimme_danger"
+description = "Build a Four-Channel ESP32 Power Controller"
+authors = [{ name = "EDA-bench authors" }]
+keywords = ["eda", "kicad", "hard"]
+
+[metadata]
+project_stem = "gimme_danger"
+benchmark = "EDA-bench"
+category = "electronic-design-automation"
+difficulty = "hard"
+difficulty_weight = 3.0
+order = 12
+source_repo_url = "https://github.com/rbaron/gimme-danger"
+source_commit = "fab3a929e10dbd6fd8f39ee15830808fd971efb0"
+source_license = "CC BY-SA 4.0"
+
+[verifier]
+timeout_sec = 10800.0
+env = { EDA_BENCH_TASK_ID = "gimme_danger" }
+environment_mode = "separate"
+network_mode = "no-network"
+
+[verifier.environment]
+docker_image = "ghcr.io/eda-bench/eda-bench-verifier:harbor-v1"
+network_mode = "no-network"
+build_timeout_sec = 1800.0
+cpus = 4
+memory_mb = 8192
+storage_mb = 30720
+gpus = 0
+
+[agent]
+timeout_sec = 10800.0
+
+[environment]
+docker_image = "ghcr.io/eda-bench/eda-bench-agent:harbor-v1"
+network_mode = "public"
+build_timeout_sec = 1800.0
+workdir = "/workspace"
+cpus = 4
+memory_mb = 8192
+storage_mb = 30720
+gpus = 0

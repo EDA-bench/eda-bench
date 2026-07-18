@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "task_id": "lora_modem",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "antenna",
+    "can",
+    "debug",
+    "flash",
+    "m2",
+    "power",
+    "spi",
+    "uart"
+  ],
+  "scored_interface_families": [
+    "can",
+    "power"
+  ],
+  "scored_routed_interface_families": [
+    "can",
+    "power"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "can"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 2
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "can"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 2
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "can"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 2
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "can",
+      "power"
+    ],
+    "routed_required_families": [
+      "can",
+      "power"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "can"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 7
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 2
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "can"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 7
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 2
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 1.0,
+    "score": 1.0
+  }
+}

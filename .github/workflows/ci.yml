@@ -1,18 +1,38 @@
-name: ci
+name: harbor-dataset
 
 on:
   push:
+    paths:
+      - "dataset/**"
+      - "images/**"
+      - "verifier/**"
+      - ".github/workflows/ci.yml"
   pull_request:
+    paths:
+      - "dataset/**"
+      - "images/**"
+      - "verifier/**"
+      - ".github/workflows/ci.yml"
 
 jobs:
-  test:
+  validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
-      - name: Install dependencies
-        run: uv sync --dev
-      - name: Lint
-        run: uv run ruff check
-      - name: Test
-        run: uv run pytest -q
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v8.1.0
+
+      - name: Build shared Harbor images
+        run: ./images/build.sh
+
+      - name: Validate Harbor manifest digests
+        run: |
+          uvx --from 'harbor==0.19.0' harbor sync dataset
+          git diff --exit-code -- dataset/dataset.toml
+
+      - name: Resolve a representative task
+        run: >-
+          uvx --from 'harbor==0.19.0' harbor run
+          --path dataset/usb_c_female_breakout
+          --agent oracle
+          --print-config
+          > /dev/null

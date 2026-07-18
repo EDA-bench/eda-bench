@@ -1,0 +1,483 @@
+{
+  "schema_version": 3,
+  "task_id": "cm4_csi_adapter",
+  "contract_kind": "refdes_invariant_external_io_function_and_pcb_health",
+  "external_net_count": 19,
+  "external_interface_ref_count": 2,
+  "external_connected_pad_count": 43,
+  "routed_external_net_count": 19,
+  "selected_geometry_track_count": 320,
+  "external_role_inventory_profile": [
+    {
+      "key": [
+        "ground",
+        "9to16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "signal",
+        "2"
+      ],
+      "count": 10
+    }
+  ],
+  "semantic_external_net_profile": [
+    {
+      "key": [
+        "semantic_external_net",
+        "ground",
+        "power",
+        "9to16",
+        "connector:ground:power:1",
+        "connector:ground:power:10",
+        "connector:ground:power:12",
+        "connector:ground:power:13",
+        "more:5to8",
+        "connector:ground:power:30",
+        "connector:ground:power:4",
+        "connector:ground:power:7",
+        "connector:ground:power:9"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "3to4",
+        "connector:power:power:22",
+        "connector:power:power:47",
+        "connector:power:power:48"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.i2c.mipi",
+        "1",
+        "connector:signal:camera.mipi:39"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.i2c.mipi",
+        "1",
+        "connector:signal:camera.mipi:40"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.i2c.mipi",
+        "1",
+        "connector:signal:camera.mipi:41"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.i2c.mipi",
+        "1",
+        "connector:signal:camera.mipi:42"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "1",
+        "connector:signal:camera.mipi:17"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "1",
+        "connector:signal:camera.mipi:20"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "1",
+        "connector:signal:camera.mipi:21"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "2",
+        "connector:signal:camera.mipi:1",
+        "connector:signal:camera.mipi:14"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "2",
+        "connector:signal:camera.mipi:10",
+        "connector:signal:camera.mipi:8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "2",
+        "connector:signal:camera.mipi:11",
+        "connector:signal:camera.mipi:3"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "2",
+        "connector:signal:camera.mipi:11",
+        "connector:signal:camera.mipi:9"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "2",
+        "connector:signal:camera.mipi:12",
+        "connector:signal:camera.mipi:4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "2",
+        "connector:signal:camera.mipi:15",
+        "connector:signal:camera.mipi:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "2",
+        "connector:signal:camera.mipi:2",
+        "connector:signal:camera.mipi:7"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "2",
+        "connector:signal:camera.mipi:3",
+        "connector:signal:camera.mipi:8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "2",
+        "connector:signal:camera.mipi:5",
+        "connector:signal:camera.mipi:5"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "2",
+        "connector:signal:camera.mipi:6",
+        "connector:signal:camera.mipi:6"
+      ],
+      "count": 1
+    }
+  ],
+  "external_net_route_profile": [
+    {
+      "key": [
+        "ground",
+        "9to16",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_gt5",
+        "layers_1",
+        "80ohm",
+        "ground:9to16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "3to4",
+        "tracks_0",
+        "route_0mm",
+        "vias_0",
+        "layers_0",
+        "z0_none",
+        "power:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_2",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_2",
+        "layers_2",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_2",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_2",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 9
+    }
+  ],
+  "realized_external_copper_profile": [
+    {
+      "key": [
+        "1",
+        "signal:1"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "2",
+        "signal:2"
+      ],
+      "count": 10
+    },
+    {
+      "key": [
+        "3to4",
+        "power:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "9to16",
+        "ground:9to16"
+      ],
+      "count": 1
+    }
+  ],
+  "external_net_degree_profile": [
+    {
+      "key": [
+        "1",
+        "signal:1"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "2",
+        "signal:2"
+      ],
+      "count": 10
+    },
+    {
+      "key": [
+        "3to4",
+        "power:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "9to16",
+        "ground:9to16"
+      ],
+      "count": 1
+    }
+  ],
+  "impedance_profile": [
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "2to10mm",
+        "70ohm"
+      ],
+      "count": 18
+    },
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "lt2mm",
+        "70ohm"
+      ],
+      "count": 278
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "2to10mm",
+        "70ohm"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "lt2mm",
+        "70ohm"
+      ],
+      "count": 20
+    }
+  ],
+  "high_speed_pair_profile": [
+    {
+      "key": [
+        "generic_diff",
+        "gte50mm",
+        "skew_lt2pct",
+        "0p18to0p30mm",
+        "70ohm",
+        "0p08to0p15mm"
+      ],
+      "count": 1
+    }
+  ],
+  "high_speed_pair_family_profile": [
+    {
+      "key": [
+        "generic_diff"
+      ],
+      "count": 1
+    }
+  ],
+  "minimum_external_io_health": {
+    "route_coverage_score": 0.95,
+    "continuity_score": 1.0,
+    "attachment_score": 0.95,
+    "short_safety_score": 1.0
+  }
+}

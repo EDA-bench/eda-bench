@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "task_id": "quanta75_pico",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "encoder",
+    "gpio",
+    "power",
+    "usb"
+  ],
+  "scored_interface_families": [
+    "gpio",
+    "power",
+    "usb"
+  ],
+  "scored_routed_interface_families": [
+    "gpio",
+    "power",
+    "usb"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 107
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 10
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 107
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 10
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 99
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 8
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "gpio",
+      "power",
+      "usb"
+    ],
+    "routed_required_families": [
+      "gpio",
+      "power",
+      "usb"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 107
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 5
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 10
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 99
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 5
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 8
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 0.9180327868852459,
+    "score": 1.0
+  }
+}

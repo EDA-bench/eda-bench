@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "task_id": "rp2040_dmxsun_ioboard",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "dmx",
+    "power"
+  ],
+  "scored_interface_families": [
+    "power"
+  ],
+  "scored_routed_interface_families": [
+    "power"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "ethernet"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 3
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "ethernet"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 3
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "ethernet"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 3
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "power"
+    ],
+    "routed_required_families": [
+      "power"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "ethernet"
+        ],
+        "count": 8
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 7
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 3
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "ethernet"
+        ],
+        "count": 8
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 7
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 3
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 1.0,
+    "score": 1.0
+  }
+}

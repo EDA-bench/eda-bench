@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "task_id": "bq24295_power_path_board",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "battery",
+    "gpio",
+    "i2c",
+    "power",
+    "usb"
+  ],
+  "scored_interface_families": [
+    "gpio",
+    "i2c",
+    "power",
+    "usb"
+  ],
+  "scored_routed_interface_families": [
+    "gpio",
+    "i2c",
+    "power",
+    "usb"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 13
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 2
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 13
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 2
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 13
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 2
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "gpio",
+      "i2c",
+      "power",
+      "usb"
+    ],
+    "routed_required_families": [
+      "gpio",
+      "i2c",
+      "power",
+      "usb"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 13
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 8
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 4
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 2
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 13
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 8
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 4
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 2
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 1.0,
+    "score": 1.0
+  }
+}

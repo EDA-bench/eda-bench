@@ -1,0 +1,899 @@
+{
+  "schema_version": 3,
+  "task_id": "bq24295_power_path_board",
+  "contract_kind": "refdes_invariant_external_io_function_and_pcb_health",
+  "external_net_count": 27,
+  "external_interface_ref_count": 19,
+  "external_connected_pad_count": 60,
+  "routed_external_net_count": 27,
+  "selected_geometry_track_count": 239,
+  "external_role_inventory_profile": [
+    {
+      "key": [
+        "ground",
+        "gt16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "5to8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1"
+      ],
+      "count": 15
+    },
+    {
+      "key": [
+        "signal",
+        "2"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "signal",
+        "3to4"
+      ],
+      "count": 1
+    }
+  ],
+  "semantic_external_net_profile": [
+    {
+      "key": [
+        "semantic_external_net",
+        "ground",
+        "power",
+        "gt16",
+        "connector:ground:power:2",
+        "connector:ground:power:4",
+        "connector:ground:power:4",
+        "connector:ground:power:5",
+        "more:9to16",
+        "usb:ground:power:A12",
+        "usb:ground:power:B1",
+        "usb:ground:power:B12",
+        "usb:ground:power:SH"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "2",
+        "connector:power:power:1",
+        "header:power:power:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "3to4",
+        "connector:power:power:3",
+        "connector:power:power:3",
+        "external:power:power:1",
+        "external:power:power:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "5to8",
+        "header:power:power:1",
+        "usb:power:power:A4",
+        "usb:power:power:A9",
+        "usb:power:power:B4",
+        "usb:power:power:B9"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "gpio",
+        "1",
+        "external:signal:gpio:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "gpio",
+        "1",
+        "external:signal:gpio:2"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "gpio",
+        "1",
+        "header:signal:gpio:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "gpio",
+        "1",
+        "header:signal:gpio:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "gpio",
+        "2",
+        "external:signal:gpio:1",
+        "header:signal:gpio:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "gpio",
+        "2",
+        "external:signal:gpio:2",
+        "external:signal:gpio:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "i2c",
+        "1",
+        "external:signal:gpio:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "i2c",
+        "1",
+        "external:signal:gpio:3"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "i2c",
+        "1",
+        "header:signal:gpio:3"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "i2c",
+        "1",
+        "header:signal:gpio:4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "i2c",
+        "2",
+        "connector:signal:i2c:1",
+        "connector:signal:i2c:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "i2c",
+        "2",
+        "connector:signal:i2c:2",
+        "connector:signal:i2c:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "usb",
+        "1",
+        "usb:signal:usb:A5"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "usb",
+        "1",
+        "usb:signal:usb:B5"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "usb",
+        "2",
+        "usb:signal:usb:2",
+        "usb:signal:usb:3"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "usb",
+        "2",
+        "usb:signal:usb:A6",
+        "usb:signal:usb:B6"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "usb",
+        "2",
+        "usb:signal:usb:A7",
+        "usb:signal:usb:B7"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "usb",
+        "3to4",
+        "external:signal:gpio:2",
+        "header:signal:gpio:2",
+        "usb:signal:usb:1"
+      ],
+      "count": 1
+    }
+  ],
+  "external_net_route_profile": [
+    {
+      "key": [
+        "ground",
+        "gt16",
+        "tracks_0",
+        "route_0mm",
+        "vias_gt5",
+        "layers_0",
+        "z0_none",
+        "ground:gt16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "2",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_2",
+        "layers_2",
+        "20ohm",
+        "power:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "3to4",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_gt5",
+        "layers_2",
+        "60ohm",
+        "power:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "5to8",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "20ohm",
+        "power:5to8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_2",
+        "route_lt2mm",
+        "vias_0",
+        "layers_1",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_2",
+        "layers_2",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "60ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_2",
+        "layers_2",
+        "60ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_3to5",
+        "layers_2",
+        "60ohm",
+        "signal:2"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "60ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "60ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_2",
+        "layers_2",
+        "60ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "3to4",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_3to5",
+        "layers_2",
+        "50ohm",
+        "signal:3to4"
+      ],
+      "count": 1
+    }
+  ],
+  "realized_external_copper_profile": [
+    {
+      "key": [
+        "1",
+        "signal:1"
+      ],
+      "count": 15
+    },
+    {
+      "key": [
+        "2",
+        "power:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "2",
+        "signal:2"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "3to4",
+        "power:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "3to4",
+        "signal:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "5to8",
+        "power:5to8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gt16",
+        "ground:gt16"
+      ],
+      "count": 1
+    }
+  ],
+  "external_net_degree_profile": [
+    {
+      "key": [
+        "1",
+        "signal:1"
+      ],
+      "count": 15
+    },
+    {
+      "key": [
+        "2",
+        "power:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "2",
+        "signal:2"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "3to4",
+        "power:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "3to4",
+        "signal:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "5to8",
+        "power:5to8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gt16",
+        "ground:gt16"
+      ],
+      "count": 1
+    }
+  ],
+  "impedance_profile": [
+    {
+      "key": [
+        "power",
+        "B.Cu",
+        "10to50mm",
+        "60ohm"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "B.Cu",
+        "2to10mm",
+        "20ohm"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "power",
+        "B.Cu",
+        "2to10mm",
+        "60ohm"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "power",
+        "B.Cu",
+        "lt2mm",
+        "20ohm"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "B.Cu",
+        "lt2mm",
+        "60ohm"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "power",
+        "F.Cu",
+        "10to50mm",
+        "60ohm"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "F.Cu",
+        "2to10mm",
+        "20ohm"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "power",
+        "F.Cu",
+        "2to10mm",
+        "60ohm"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "power",
+        "F.Cu",
+        "lt2mm",
+        "20ohm"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "power",
+        "F.Cu",
+        "lt2mm",
+        "50ohm"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "power",
+        "F.Cu",
+        "lt2mm",
+        "60ohm"
+      ],
+      "count": 11
+    },
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "10to50mm",
+        "50ohm"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "10to50mm",
+        "60ohm"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "2to10mm",
+        "50ohm"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "2to10mm",
+        "60ohm"
+      ],
+      "count": 19
+    },
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "lt2mm",
+        "50ohm"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "lt2mm",
+        "60ohm"
+      ],
+      "count": 9
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "10to50mm",
+        "60ohm"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "2to10mm",
+        "20ohm"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "2to10mm",
+        "60ohm"
+      ],
+      "count": 42
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "lt2mm",
+        "20ohm"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "lt2mm",
+        "50ohm"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "lt2mm",
+        "60ohm"
+      ],
+      "count": 104
+    }
+  ],
+  "high_speed_pair_profile": [
+    {
+      "key": [
+        "generic_diff",
+        "10to50mm",
+        "skew_10to25pct",
+        "0p18to0p30mm",
+        "60ohm",
+        "0p15to0p30mm"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "generic_diff",
+        "10to50mm",
+        "skew_10to25pct",
+        "0p30to0p60mm",
+        "60ohm",
+        "0p30to0p60mm"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "generic_diff",
+        "10to50mm",
+        "skew_2to5pct",
+        "0p18to0p30mm",
+        "60ohm",
+        "0p15to0p30mm"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "generic_diff",
+        "10to50mm",
+        "skew_5to10pct",
+        "0p18to0p30mm",
+        "60ohm",
+        "0p15to0p30mm"
+      ],
+      "count": 1
+    }
+  ],
+  "high_speed_pair_family_profile": [
+    {
+      "key": [
+        "generic_diff"
+      ],
+      "count": 4
+    }
+  ],
+  "minimum_external_io_health": {
+    "route_coverage_score": 0.95,
+    "continuity_score": 1.0,
+    "attachment_score": 0.95,
+    "short_safety_score": 1.0
+  }
+}

@@ -1,0 +1,47 @@
+schema_version = "1.3"
+artifacts = ["/workspace/final_project"]
+
+[task]
+name = "eda-bench/usb_c_female_breakout"
+description = "Build a USB-C Female Breakout"
+authors = [{ name = "EDA-bench authors" }]
+keywords = ["eda", "kicad", "very easy"]
+
+[metadata]
+project_stem = "usb_c_female_breakout"
+benchmark = "EDA-bench"
+category = "electronic-design-automation"
+difficulty = "very easy"
+difficulty_weight = 1.0
+order = 33
+source_repo_url = "https://github.com/SolderedElectronics/USB-C-female-connector-breakout-hardware-design"
+source_commit = "26821791dc2056231d63f36558a2a26e0e9d5401"
+source_license = "TAPR OHL v1.0"
+
+[verifier]
+timeout_sec = 10800.0
+env = { EDA_BENCH_TASK_ID = "usb_c_female_breakout" }
+environment_mode = "separate"
+network_mode = "no-network"
+
+[verifier.environment]
+docker_image = "ghcr.io/eda-bench/eda-bench-verifier:harbor-v1"
+network_mode = "no-network"
+build_timeout_sec = 1800.0
+cpus = 4
+memory_mb = 8192
+storage_mb = 30720
+gpus = 0
+
+[agent]
+timeout_sec = 10800.0
+
+[environment]
+docker_image = "ghcr.io/eda-bench/eda-bench-agent:harbor-v1"
+network_mode = "public"
+build_timeout_sec = 1800.0
+workdir = "/workspace"
+cpus = 4
+memory_mb = 8192
+storage_mb = 30720
+gpus = 0

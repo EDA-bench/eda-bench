@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "task_id": "robotont_driver_board",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "encoder",
+    "gpio",
+    "motor",
+    "power"
+  ],
+  "scored_interface_families": [
+    "gpio",
+    "power"
+  ],
+  "scored_routed_interface_families": [
+    "gpio",
+    "power"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 18
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 18
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 17
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "gpio",
+      "power"
+    ],
+    "routed_required_families": [
+      "gpio",
+      "power"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 18
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 5
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 17
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 5
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 0.9565217391304348,
+    "score": 1.0
+  }
+}

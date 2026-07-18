@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "task_id": "m2_5g_usb3_interface",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "debug",
+    "m2",
+    "power",
+    "sim",
+    "usb"
+  ],
+  "scored_interface_families": [
+    "debug",
+    "power",
+    "usb"
+  ],
+  "scored_routed_interface_families": [
+    "debug",
+    "power",
+    "usb"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 53
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 6
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 53
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 6
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 13
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 6
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "debug",
+      "power",
+      "usb"
+    ],
+    "routed_required_families": [
+      "debug",
+      "power",
+      "usb"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "debug"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 53
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 6
+      },
+      {
+        "key": [
+          "sdcard"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 4
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 6
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "debug"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 13
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 5
+      },
+      {
+        "key": [
+          "sdcard"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 4
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 6
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 0.39705882352941174,
+    "score": 1.0
+  }
+}

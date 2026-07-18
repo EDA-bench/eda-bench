@@ -1,0 +1,24 @@
+{
+  "board": {
+    "active_layer": 0,
+    "visible_layers": "fffffff_ffffffff",
+    "visible_items": "ffffffff"
+  },
+  "meta": {
+    "filename": "nanoupdi.kicad_pro",
+    "version": 1
+  },
+  "pcbnew": {
+    "last_paths": {
+      "gencad": "",
+      "idf": "",
+      "netlist": "",
+      "specctra_dsn": "",
+      "step": "",
+      "vrml": ""
+    }
+  },
+  "schematic": {
+    "legacy_lib_dir": ""
+  }
+}

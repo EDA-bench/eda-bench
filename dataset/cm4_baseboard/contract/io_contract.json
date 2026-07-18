@@ -1,0 +1,3398 @@
+{
+  "schema_version": 3,
+  "task_id": "cm4_baseboard",
+  "contract_kind": "refdes_invariant_external_io_function_and_pcb_health",
+  "external_net_count": 202,
+  "external_interface_ref_count": 17,
+  "external_connected_pad_count": 450,
+  "routed_external_net_count": 200,
+  "selected_geometry_track_count": 320,
+  "external_role_inventory_profile": [
+    {
+      "key": [
+        "ground",
+        "gt16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "1"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "power",
+        "2"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "power",
+        "3to4"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "power",
+        "5to8"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "power",
+        "9to16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1"
+      ],
+      "count": 92
+    },
+    {
+      "key": [
+        "signal",
+        "2"
+      ],
+      "count": 93
+    },
+    {
+      "key": [
+        "signal",
+        "3to4"
+      ],
+      "count": 3
+    }
+  ],
+  "semantic_external_net_profile": [
+    {
+      "key": [
+        "semantic_external_net",
+        "ground",
+        "power",
+        "gt16",
+        "ffc:ground:power:12",
+        "ffc:ground:power:15",
+        "ffc:ground:power:18",
+        "ffc:ground:power:27",
+        "more:gt16",
+        "usb:ground:power:B12",
+        "usb:ground:power:B12",
+        "usb:ground:power:SH",
+        "usb:ground:power:SH"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "1",
+        "rf:power:power:43"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "1",
+        "rf:power:power:45"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "1",
+        "rf:power:power:47"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "1",
+        "rf:power:power:49"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "2",
+        "ffc:power:power:47",
+        "ffc:power:power:48"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "2",
+        "ffc:power:power:49",
+        "ffc:power:power:50"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "2",
+        "rf:power:power:84",
+        "rf:power:power:86"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "2",
+        "rf:power:power:88",
+        "rf:power:power:90"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "3to4",
+        "usb:power:power:A4",
+        "usb:power:power:A9",
+        "usb:power:power:B4",
+        "usb:power:power:B9"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "5to8",
+        "ethernet:power:power:15",
+        "ethernet:power:power:17",
+        "rf:power:power:1",
+        "rf:power:power:12",
+        "rf:power:power:17",
+        "rf:power:power:2",
+        "sdcard:power:power:4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "5to8",
+        "rf:power:power:2",
+        "rf:power:power:4",
+        "rf:power:power:77",
+        "rf:power:power:79",
+        "rf:power:power:81",
+        "rf:power:power:83",
+        "rf:power:power:85",
+        "rf:power:power:87"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "9to16",
+        "m2:power:power:12",
+        "m2:power:power:14",
+        "m2:power:power:16",
+        "m2:power:power:18",
+        "more:1",
+        "m2:power:power:4",
+        "m2:power:power:70",
+        "m2:power:power:72",
+        "m2:power:power:74"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:100"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:11"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:16"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:18"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:2"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:20"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:21"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:22"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:24"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:26"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:28"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:30"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:43"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:46"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:48"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:52"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:54"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:57"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:58"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:59"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:60"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:63"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:64"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:65"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:66"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:69"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:71"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:73"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:76"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:78"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:89"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:91"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:92"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:95"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "1",
+        "rf:signal:antenna:99"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:11",
+        "rf:signal:antenna:50"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:12",
+        "rf:signal:antenna:49"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:13",
+        "rf:signal:antenna:48"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:14",
+        "rf:signal:antenna:94"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:15",
+        "rf:signal:antenna:46"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:16",
+        "rf:signal:antenna:47"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:18",
+        "rf:signal:antenna:45"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:19",
+        "rf:signal:antenna:44"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:22",
+        "rf:signal:antenna:41"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:23",
+        "rf:signal:antenna:38"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:24",
+        "rf:signal:antenna:37"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:25",
+        "rf:signal:antenna:40"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:26",
+        "rf:signal:antenna:35"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:26",
+        "rf:signal:antenna:37"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:27",
+        "rf:signal:antenna:38"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:29",
+        "rf:signal:antenna:36"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:3",
+        "rf:signal:antenna:58"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:30",
+        "rf:signal:antenna:31"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:30",
+        "rf:signal:antenna:96"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "2",
+        "rf:signal:antenna:5",
+        "rf:signal:antenna:56"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna",
+        "3to4",
+        "rf:signal:antenna:10",
+        "rf:signal:antenna:4",
+        "rf:signal:antenna:6",
+        "rf:signal:antenna:8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera",
+        "1",
+        "rf:signal:antenna:97"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.i2c.mipi",
+        "3to4",
+        "ffc:signal:gpio:41",
+        "rf:signal:antenna:3",
+        "rf:signal:antenna:3",
+        "rf:signal:antenna:82"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.i2c.mipi",
+        "3to4",
+        "ffc:signal:gpio:42",
+        "rf:signal:antenna:4",
+        "rf:signal:antenna:4",
+        "rf:signal:antenna:80"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:19",
+        "rf:signal:antenna:39"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:20",
+        "rf:signal:antenna:41"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:21",
+        "rf:signal:antenna:33"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:22",
+        "rf:signal:antenna:35"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:23",
+        "rf:signal:antenna:21"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:24",
+        "rf:signal:antenna:23"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:25",
+        "rf:signal:antenna:15"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:26",
+        "rf:signal:antenna:17"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:5",
+        "rf:signal:antenna:34"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:6",
+        "rf:signal:antenna:36"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:7",
+        "rf:signal:antenna:28"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi",
+        "2",
+        "ffc:signal:gpio:8",
+        "rf:signal:antenna:30"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi.sdcard",
+        "2",
+        "ffc:signal:gpio:10",
+        "rf:signal:antenna:40"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi.sdcard",
+        "2",
+        "ffc:signal:gpio:11",
+        "rf:signal:antenna:42"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi.sdcard",
+        "2",
+        "ffc:signal:gpio:28",
+        "rf:signal:antenna:27"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.camera.mipi.sdcard",
+        "2",
+        "ffc:signal:gpio:29",
+        "rf:signal:antenna:29"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.debug",
+        "1",
+        "rf:signal:antenna:93"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi",
+        "1",
+        "rf:signal:antenna:51"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi",
+        "1",
+        "rf:signal:antenna:53"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi",
+        "2",
+        "hdmi:signal:display.hdmi:1",
+        "rf:signal:antenna:70"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi",
+        "2",
+        "hdmi:signal:display.hdmi:3",
+        "rf:signal:antenna:72"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi",
+        "2",
+        "hdmi:signal:display.hdmi:4",
+        "rf:signal:antenna:76"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi",
+        "2",
+        "hdmi:signal:display.hdmi:6",
+        "rf:signal:antenna:78"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi",
+        "2",
+        "hdmi:signal:display.hdmi:7",
+        "rf:signal:antenna:82"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi",
+        "2",
+        "hdmi:signal:display.hdmi:9",
+        "rf:signal:antenna:84"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi.i2c",
+        "1",
+        "rf:signal:antenna:100"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi.i2c",
+        "1",
+        "rf:signal:antenna:99"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi.sdcard",
+        "2",
+        "hdmi:signal:display.hdmi:10",
+        "rf:signal:antenna:88"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.hdmi.sdcard",
+        "2",
+        "hdmi:signal:display.hdmi:12",
+        "rf:signal:antenna:90"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.mipi",
+        "2",
+        "rf:signal:antenna:11",
+        "rf:signal:antenna:95"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.mipi",
+        "2",
+        "rf:signal:antenna:15",
+        "rf:signal:antenna:81"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.mipi",
+        "2",
+        "rf:signal:antenna:17",
+        "rf:signal:antenna:83"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.mipi",
+        "2",
+        "rf:signal:antenna:21",
+        "rf:signal:antenna:75"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.mipi",
+        "2",
+        "rf:signal:antenna:23",
+        "rf:signal:antenna:77"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.mipi",
+        "2",
+        "rf:signal:antenna:3",
+        "rf:signal:antenna:94"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.mipi",
+        "2",
+        "rf:signal:antenna:5",
+        "rf:signal:antenna:96"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.mipi",
+        "2",
+        "rf:signal:antenna:9",
+        "rf:signal:antenna:93"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.mipi.sdcard",
+        "2",
+        "rf:signal:antenna:27",
+        "rf:signal:antenna:87"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.display.mipi.sdcard",
+        "2",
+        "rf:signal:antenna:29",
+        "rf:signal:antenna:89"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.eeprom",
+        "1",
+        "rf:signal:antenna:20"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.ethernet",
+        "1",
+        "rf:signal:antenna:15"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.ethernet",
+        "1",
+        "rf:signal:antenna:17"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.ethernet",
+        "2",
+        "ethernet:signal:ethernet:1",
+        "rf:signal:antenna:12"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.ethernet",
+        "2",
+        "ethernet:signal:ethernet:10",
+        "rf:signal:antenna:5"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.ethernet",
+        "2",
+        "ethernet:signal:ethernet:2",
+        "rf:signal:antenna:10"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.ethernet",
+        "2",
+        "ethernet:signal:ethernet:3",
+        "rf:signal:antenna:4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.ethernet",
+        "2",
+        "ethernet:signal:ethernet:6",
+        "rf:signal:antenna:6"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.ethernet",
+        "2",
+        "ethernet:signal:ethernet:7",
+        "rf:signal:antenna:11"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.ethernet",
+        "2",
+        "ethernet:signal:ethernet:8",
+        "rf:signal:antenna:9"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.ethernet",
+        "2",
+        "ethernet:signal:ethernet:9",
+        "rf:signal:antenna:3"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.i2c",
+        "2",
+        "rf:signal:antenna:27",
+        "rf:signal:antenna:36"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.i2c",
+        "2",
+        "rf:signal:antenna:28",
+        "rf:signal:antenna:35"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.m2",
+        "2",
+        "m2:signal:m2:41",
+        "rf:signal:antenna:18"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.m2",
+        "2",
+        "m2:signal:m2:43",
+        "rf:signal:antenna:16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.m2",
+        "2",
+        "m2:signal:m2:47",
+        "rf:signal:antenna:24"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.m2",
+        "2",
+        "m2:signal:m2:49",
+        "rf:signal:antenna:22"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.m2",
+        "2",
+        "m2:signal:m2:50",
+        "rf:signal:antenna:9"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.m2.sdcard",
+        "2",
+        "m2:signal:m2:52",
+        "rf:signal:antenna:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.m2.sdcard",
+        "2",
+        "m2:signal:m2:53",
+        "rf:signal:antenna:12"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.m2.sdcard",
+        "2",
+        "m2:signal:m2:55",
+        "rf:signal:antenna:10"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.sdcard",
+        "2",
+        "rf:signal:antenna:57",
+        "sdcard:signal:sdcard:5"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.sdcard",
+        "2",
+        "rf:signal:antenna:61",
+        "sdcard:signal:sdcard:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.sdcard",
+        "2",
+        "rf:signal:antenna:62",
+        "sdcard:signal:sdcard:3"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.sdcard",
+        "2",
+        "rf:signal:antenna:63",
+        "sdcard:signal:sdcard:7"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.sdcard",
+        "2",
+        "rf:signal:antenna:67",
+        "sdcard:signal:sdcard:8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.sdcard",
+        "2",
+        "rf:signal:antenna:69",
+        "sdcard:signal:sdcard:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.uart",
+        "2",
+        "rf:signal:antenna:10",
+        "rf:signal:antenna:55"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.uart",
+        "2",
+        "rf:signal:antenna:21",
+        "rf:signal:antenna:40"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.uart",
+        "2",
+        "rf:signal:antenna:24",
+        "rf:signal:antenna:39"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.uart",
+        "2",
+        "rf:signal:antenna:28",
+        "rf:signal:antenna:33"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.uart",
+        "2",
+        "rf:signal:antenna:29",
+        "rf:signal:antenna:34"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.uart",
+        "2",
+        "rf:signal:antenna:31",
+        "rf:signal:antenna:32"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.uart",
+        "2",
+        "rf:signal:antenna:51",
+        "rf:signal:antenna:8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.uart",
+        "2",
+        "rf:signal:antenna:54",
+        "rf:signal:antenna:7"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.usb",
+        "1",
+        "rf:signal:antenna:3"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.usb",
+        "1",
+        "rf:signal:antenna:5"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "antenna.usb",
+        "2",
+        "rf:signal:antenna:1",
+        "rf:signal:antenna:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.i2c.mipi",
+        "1",
+        "ffc:signal:gpio:39"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.i2c.mipi",
+        "1",
+        "ffc:signal:gpio:40"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "1",
+        "ffc:signal:gpio:32"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "camera.mipi",
+        "1",
+        "ffc:signal:gpio:34"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "display.hdmi",
+        "1",
+        "hdmi:signal:display.hdmi:13"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "display.hdmi",
+        "1",
+        "hdmi:signal:display.hdmi:18"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "display.hdmi",
+        "1",
+        "hdmi:signal:display.hdmi:19"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "display.hdmi.i2c",
+        "1",
+        "hdmi:signal:display.hdmi:15"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "display.hdmi.i2c",
+        "1",
+        "hdmi:signal:display.hdmi:16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "ethernet",
+        "1",
+        "ethernet:signal:ethernet:11"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "ethernet",
+        "1",
+        "ethernet:signal:ethernet:12"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "ethernet",
+        "1",
+        "ethernet:signal:ethernet:13"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "ethernet",
+        "1",
+        "ethernet:signal:ethernet:14"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "ethernet",
+        "1",
+        "ethernet:signal:ethernet:16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "ethernet",
+        "1",
+        "ethernet:signal:ethernet:18"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "ethernet",
+        "2",
+        "ethernet:signal:ethernet:19",
+        "ethernet:signal:ethernet:20"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "ethernet",
+        "2",
+        "ethernet:signal:ethernet:4",
+        "ethernet:signal:ethernet:5"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:10"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:11"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:13"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:17"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:19"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:23"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:25"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:29"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:31"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:35"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:37"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:42"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:44"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:5"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:54"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:68"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:7"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.sdcard",
+        "1",
+        "m2:signal:m2:40"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "sdcard",
+        "1",
+        "sdcard:signal:sdcard:10"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "sdcard",
+        "1",
+        "sdcard:signal:sdcard:9"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "usb",
+        "1",
+        "usb:signal:usb:A5"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "usb",
+        "1",
+        "usb:signal:usb:B5"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "usb",
+        "2",
+        "usb:signal:usb:A6",
+        "usb:signal:usb:B6"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "usb",
+        "2",
+        "usb:signal:usb:A7",
+        "usb:signal:usb:B7"
+      ],
+      "count": 2
+    }
+  ],
+  "external_net_route_profile": [
+    {
+      "key": [
+        "ground",
+        "gt16",
+        "tracks_gt32",
+        "route_gte150mm",
+        "vias_gt5",
+        "layers_2",
+        "80ohm",
+        "ground:gt16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "power:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "1",
+        "tracks_6to12",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "power:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "power",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_2",
+        "layers_2",
+        "50ohm",
+        "power:2"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "power",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_2",
+        "layers_2",
+        "80ohm",
+        "power:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "2",
+        "tracks_6to12",
+        "route_2to10mm",
+        "vias_2",
+        "layers_2",
+        "80ohm",
+        "power:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "3to4",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_2",
+        "50ohm",
+        "power:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "3to4",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_3to5",
+        "layers_2",
+        "80ohm",
+        "power:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "5to8",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_gt5",
+        "layers_2",
+        "70ohm",
+        "power:5to8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "5to8",
+        "tracks_gt32",
+        "route_gte150mm",
+        "vias_gt5",
+        "layers_gt2",
+        "70ohm",
+        "power:5to8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "9to16",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_1",
+        "layers_2",
+        "70ohm",
+        "power:9to16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_0",
+        "route_0mm",
+        "vias_0",
+        "layers_0",
+        "z0_none",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_1",
+        "route_lt2mm",
+        "vias_0",
+        "layers_1",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_1",
+        "route_lt2mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 9
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "90ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_2",
+        "layers_2",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_2",
+        "layers_gt2",
+        "100ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_3to5",
+        "layers_2",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_2",
+        "100ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_gt2",
+        "100ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_3to5",
+        "layers_gt2",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_2",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "40ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_2",
+        "route_2to10mm",
+        "vias_1",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_2",
+        "route_lt2mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_2",
+        "route_lt2mm",
+        "vias_1",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "40ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "40ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_1",
+        "layers_1",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_1",
+        "layers_2",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_1",
+        "layers_2",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_lt2mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_lt2mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_lt2mm",
+        "vias_1",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_lt2mm",
+        "vias_1",
+        "layers_2",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_lt2mm",
+        "vias_1",
+        "layers_2",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "90ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_2to10mm",
+        "vias_1",
+        "layers_2",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_2to10mm",
+        "vias_1",
+        "layers_2",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_2to10mm",
+        "vias_2",
+        "layers_2",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_lt2mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_gt32",
+        "route_10to50mm",
+        "vias_gt5",
+        "layers_gt2",
+        "50ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_gt5",
+        "layers_gt2",
+        "80ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:2"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "80ohm",
+        "signal:2"
+      ],
+      "count": 20
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_2",
+        "layers_gt2",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_2",
+        "layers_gt2",
+        "80ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_2",
+        "layers_gt2",
+        "90ohm",
+        "signal:2"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_2",
+        "100ohm",
+        "signal:2"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_2",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_2",
+        "80ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_2",
+        "90ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_3to5",
+        "layers_2",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_3to5",
+        "layers_gt2",
+        "100ohm",
+        "signal:2"
+      ],
+      "count": 15
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "80ohm",
+        "signal:2"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_0",
+        "layers_2",
+        "80ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_2",
+        "layers_gt2",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_gt32",
+        "route_10to50mm",
+        "vias_2",
+        "layers_gt2",
+        "90ohm",
+        "signal:2"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_2",
+        "80ohm",
+        "signal:2"
+      ],
+      "count": 7
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_gt2",
+        "80ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_3to5",
+        "layers_2",
+        "100ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_3to5",
+        "layers_gt2",
+        "100ohm",
+        "signal:2"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_3to5",
+        "layers_gt2",
+        "80ohm",
+        "signal:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "3to4",
+        "tracks_13to32",
+        "route_2to10mm",
+        "vias_0",
+        "layers_1",
+        "70ohm",
+        "signal:3to4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "3to4",
+        "tracks_gt32",
+        "route_gte150mm",
+        "vias_gt5",
+        "layers_gt2",
+        "80ohm",
+        "signal:3to4"
+      ],
+      "count": 2
+    }
+  ],
+  "realized_external_copper_profile": [
+    {
+      "key": [
+        "1",
+        "power:1"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "1",
+        "signal:1"
+      ],
+      "count": 176
+    },
+    {
+      "key": [
+        "2",
+        "power:2"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "2",
+        "signal:2"
+      ],
+      "count": 51
+    },
+    {
+      "key": [
+        "3to4",
+        "power:3to4"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "3to4",
+        "signal:3to4"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "5to8",
+        "power:5to8"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "9to16",
+        "power:9to16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gt16",
+        "ground:gt16"
+      ],
+      "count": 1
+    }
+  ],
+  "external_net_degree_profile": [
+    {
+      "key": [
+        "1",
+        "power:1"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "1",
+        "signal:1"
+      ],
+      "count": 92
+    },
+    {
+      "key": [
+        "2",
+        "power:2"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "2",
+        "signal:2"
+      ],
+      "count": 93
+    },
+    {
+      "key": [
+        "3to4",
+        "power:3to4"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "3to4",
+        "signal:3to4"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "5to8",
+        "power:5to8"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "9to16",
+        "power:9to16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gt16",
+        "ground:gt16"
+      ],
+      "count": 1
+    }
+  ],
+  "impedance_profile": [
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "2to10mm",
+        "80ohm"
+      ],
+      "count": 24
+    },
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "lt2mm",
+        "80ohm"
+      ],
+      "count": 134
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "2to10mm",
+        "80ohm"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "lt2mm",
+        "80ohm"
+      ],
+      "count": 63
+    },
+    {
+      "key": [
+        "signal",
+        "In2.Cu",
+        "10to50mm",
+        "90ohm"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "signal",
+        "In2.Cu",
+        "2to10mm",
+        "90ohm"
+      ],
+      "count": 22
+    },
+    {
+      "key": [
+        "signal",
+        "In2.Cu",
+        "lt2mm",
+        "90ohm"
+      ],
+      "count": 68
+    }
+  ],
+  "high_speed_pair_profile": [
+    {
+      "key": [
+        "mipi",
+        "10to50mm",
+        "skew_lt2pct",
+        "0p12to0p18mm",
+        "80ohm",
+        "0p15to0p30mm"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "mipi",
+        "10to50mm",
+        "skew_lt2pct",
+        "0p12to0p18mm",
+        "90ohm",
+        "0p15to0p30mm"
+      ],
+      "count": 3
+    }
+  ],
+  "high_speed_pair_family_profile": [
+    {
+      "key": [
+        "mipi"
+      ],
+      "count": 2
+    }
+  ],
+  "minimum_external_io_health": {
+    "route_coverage_score": 0.95,
+    "continuity_score": 1.0,
+    "attachment_score": 0.95,
+    "short_safety_score": 1.0
+  }
+}

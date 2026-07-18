@@ -1,0 +1,47 @@
+schema_version = "1.3"
+artifacts = ["/workspace/final_project"]
+
+[task]
+name = "eda-bench/rs485_transceiver_breakout"
+description = "Build an RS-485 Transceiver Breakout"
+authors = [{ name = "EDA-bench authors" }]
+keywords = ["eda", "kicad", "medium"]
+
+[metadata]
+project_stem = "rs485_transceiver_breakout"
+benchmark = "EDA-bench"
+category = "electronic-design-automation"
+difficulty = "medium"
+difficulty_weight = 2.0
+order = 32
+source_repo_url = "https://github.com/SolderedElectronics/RS-485-Transceiver-breakout-hardware-design"
+source_commit = "22fb2d67cd4cd06996c4f092d209308e0b192f56"
+source_license = "TAPR OHL v1.0"
+
+[verifier]
+timeout_sec = 10800.0
+env = { EDA_BENCH_TASK_ID = "rs485_transceiver_breakout" }
+environment_mode = "separate"
+network_mode = "no-network"
+
+[verifier.environment]
+docker_image = "ghcr.io/eda-bench/eda-bench-verifier:harbor-v1"
+network_mode = "no-network"
+build_timeout_sec = 1800.0
+cpus = 4
+memory_mb = 8192
+storage_mb = 30720
+gpus = 0
+
+[agent]
+timeout_sec = 10800.0
+
+[environment]
+docker_image = "ghcr.io/eda-bench/eda-bench-agent:harbor-v1"
+network_mode = "public"
+build_timeout_sec = 1800.0
+workdir = "/workspace"
+cpus = 4
+memory_mb = 8192
+storage_mb = 30720
+gpus = 0

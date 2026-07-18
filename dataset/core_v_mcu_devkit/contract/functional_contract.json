@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "task_id": "core_v_mcu_devkit",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "camera",
+    "debug",
+    "power",
+    "usb"
+  ],
+  "scored_interface_families": [
+    "camera",
+    "debug",
+    "power",
+    "usb"
+  ],
+  "scored_routed_interface_families": [
+    "camera",
+    "debug",
+    "power",
+    "usb"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "camera"
+      ],
+      "count": 14
+    },
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "flash"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 51
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "spi"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 4
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "camera"
+      ],
+      "count": 14
+    },
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "flash"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 51
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "spi"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 4
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "camera"
+      ],
+      "count": 12
+    },
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "flash"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 50
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "spi"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 4
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "camera",
+      "debug",
+      "power",
+      "usb"
+    ],
+    "routed_required_families": [
+      "camera",
+      "debug",
+      "power",
+      "usb"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "camera"
+        ],
+        "count": 14
+      },
+      {
+        "key": [
+          "debug"
+        ],
+        "count": 6
+      },
+      {
+        "key": [
+          "flash"
+        ],
+        "count": 6
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 51
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 5
+      },
+      {
+        "key": [
+          "sdcard"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "spi"
+        ],
+        "count": 3
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 6
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 4
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "camera"
+        ],
+        "count": 12
+      },
+      {
+        "key": [
+          "debug"
+        ],
+        "count": 6
+      },
+      {
+        "key": [
+          "flash"
+        ],
+        "count": 6
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 50
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 5
+      },
+      {
+        "key": [
+          "sdcard"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "spi"
+        ],
+        "count": 3
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 6
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 4
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 0.967741935483871,
+    "score": 1.0
+  }
+}

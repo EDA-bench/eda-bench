@@ -1,0 +1,705 @@
+{
+  "schema_version": 3,
+  "task_id": "m2_pcie_adapter",
+  "contract_kind": "refdes_invariant_external_io_function_and_pcb_health",
+  "external_net_count": 28,
+  "external_interface_ref_count": 5,
+  "external_connected_pad_count": 100,
+  "routed_external_net_count": 28,
+  "selected_geometry_track_count": 320,
+  "external_role_inventory_profile": [
+    {
+      "key": [
+        "ground",
+        "gt16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "5to8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "9to16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "signal",
+        "2"
+      ],
+      "count": 18
+    }
+  ],
+  "semantic_external_net_profile": [
+    {
+      "key": [
+        "semantic_external_net",
+        "ground",
+        "power",
+        "gt16",
+        "m2:ground:power:1",
+        "m2:ground:power:15",
+        "m2:ground:power:21",
+        "m2:ground:power:27",
+        "more:gt16",
+        "usb:ground:power:B29",
+        "usb:ground:power:B32",
+        "usb:ground:power:B4",
+        "usb:ground:power:B7"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "1",
+        "usb:power:power:B10"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "2",
+        "rf:power:power:1",
+        "rf:power:power:4"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "5to8",
+        "rf:power:power:1",
+        "rf:power:power:1",
+        "usb:power:power:A2",
+        "usb:power:power:A3",
+        "usb:power:power:B1",
+        "usb:power:power:B2",
+        "usb:power:power:B3"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "power",
+        "power",
+        "9to16",
+        "m2:power:power:12",
+        "m2:power:power:14",
+        "m2:power:power:16",
+        "m2:power:power:18",
+        "more:3to4",
+        "m2:power:power:74",
+        "usb:power:power:A10",
+        "usb:power:power:A9",
+        "usb:power:power:B8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:50"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:52"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2",
+        "1",
+        "m2:signal:m2:54"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:11",
+        "usb:signal:pcie.usb:B28"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:13",
+        "usb:signal:pcie.usb:B27"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:17",
+        "usb:signal:pcie.usb:A26"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:19",
+        "usb:signal:pcie.usb:A25"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:23",
+        "usb:signal:pcie.usb:B24"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:25",
+        "usb:signal:pcie.usb:B23"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:29",
+        "usb:signal:pcie.usb:A22"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:31",
+        "usb:signal:pcie.usb:A21"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:35",
+        "usb:signal:pcie.usb:B20"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:37",
+        "usb:signal:pcie.usb:B19"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:41",
+        "usb:signal:pcie.usb:A17"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:43",
+        "usb:signal:pcie.usb:A16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:47",
+        "usb:signal:pcie.usb:B15"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:49",
+        "usb:signal:pcie.usb:B14"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:5",
+        "usb:signal:pcie.usb:A30"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:53",
+        "usb:signal:pcie.usb:A14"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:55",
+        "usb:signal:pcie.usb:A13"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "m2.pcie.usb",
+        "2",
+        "m2:signal:m2:7",
+        "usb:signal:pcie.usb:A29"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "pcie.usb",
+        "1",
+        "usb:signal:pcie.usb:A11"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "semantic_external_net",
+        "signal",
+        "pcie.usb",
+        "1",
+        "usb:signal:pcie.usb:B11"
+      ],
+      "count": 1
+    }
+  ],
+  "external_net_route_profile": [
+    {
+      "key": [
+        "ground",
+        "gt16",
+        "tracks_gt32",
+        "route_50to150mm",
+        "vias_gt5",
+        "layers_2",
+        "60ohm",
+        "ground:gt16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "60ohm",
+        "power:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "2",
+        "tracks_3to5",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "20ohm",
+        "power:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "5to8",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_2",
+        "layers_2",
+        "50ohm",
+        "power:5to8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power",
+        "9to16",
+        "tracks_13to32",
+        "route_50to150mm",
+        "vias_3to5",
+        "layers_2",
+        "60ohm",
+        "power:9to16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_10to50mm",
+        "vias_0",
+        "layers_1",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_3to5",
+        "route_2to10mm",
+        "vias_1",
+        "layers_2",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "signal",
+        "1",
+        "tracks_6to12",
+        "route_2to10mm",
+        "vias_1",
+        "layers_2",
+        "60ohm",
+        "signal:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_1",
+        "layers_2",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "signal",
+        "2",
+        "tracks_13to32",
+        "route_10to50mm",
+        "vias_2",
+        "layers_2",
+        "70ohm",
+        "signal:2"
+      ],
+      "count": 10
+    }
+  ],
+  "realized_external_copper_profile": [
+    {
+      "key": [
+        "1",
+        "power:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "1",
+        "signal:1"
+      ],
+      "count": 37
+    },
+    {
+      "key": [
+        "2",
+        "power:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "2",
+        "signal:2"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "5to8",
+        "power:5to8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "9to16",
+        "power:9to16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gt16",
+        "ground:gt16"
+      ],
+      "count": 1
+    }
+  ],
+  "external_net_degree_profile": [
+    {
+      "key": [
+        "1",
+        "power:1"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "1",
+        "signal:1"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "2",
+        "power:2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "2",
+        "signal:2"
+      ],
+      "count": 18
+    },
+    {
+      "key": [
+        "5to8",
+        "power:5to8"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "9to16",
+        "power:9to16"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "gt16",
+        "ground:gt16"
+      ],
+      "count": 1
+    }
+  ],
+  "impedance_profile": [
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "10to50mm",
+        "70ohm"
+      ],
+      "count": 6
+    },
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "2to10mm",
+        "70ohm"
+      ],
+      "count": 51
+    },
+    {
+      "key": [
+        "signal",
+        "B.Cu",
+        "lt2mm",
+        "70ohm"
+      ],
+      "count": 74
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "2to10mm",
+        "70ohm"
+      ],
+      "count": 27
+    },
+    {
+      "key": [
+        "signal",
+        "F.Cu",
+        "lt2mm",
+        "70ohm"
+      ],
+      "count": 162
+    }
+  ],
+  "high_speed_pair_profile": [
+    {
+      "key": [
+        "high_speed_data",
+        "10to50mm",
+        "skew_lt2pct",
+        "0p18to0p30mm",
+        "70ohm",
+        "0p08to0p15mm"
+      ],
+      "count": 7
+    }
+  ],
+  "high_speed_pair_family_profile": [
+    {
+      "key": [
+        "high_speed_data"
+      ],
+      "count": 1
+    }
+  ],
+  "minimum_external_io_health": {
+    "route_coverage_score": 0.95,
+    "continuity_score": 1.0,
+    "attachment_score": 0.95,
+    "short_safety_score": 1.0
+  }
+}

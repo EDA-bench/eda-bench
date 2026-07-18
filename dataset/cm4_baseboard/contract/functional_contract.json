@@ -1,0 +1,457 @@
+{
+  "schema_version": 1,
+  "task_id": "cm4_baseboard",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "camera",
+    "debug",
+    "display",
+    "ethernet",
+    "m2",
+    "power",
+    "sdcard",
+    "usb"
+  ],
+  "scored_interface_families": [
+    "camera",
+    "debug",
+    "display",
+    "ethernet",
+    "power",
+    "sdcard",
+    "usb"
+  ],
+  "scored_routed_interface_families": [
+    "camera",
+    "debug",
+    "display",
+    "ethernet",
+    "power",
+    "sdcard",
+    "usb"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "camera"
+      ],
+      "count": 23
+    },
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "display"
+      ],
+      "count": 26
+    },
+    {
+      "key": [
+        "eeprom"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "ethernet"
+      ],
+      "count": 14
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 103
+    },
+    {
+      "key": [
+        "hdmi"
+      ],
+      "count": 12
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 10
+    },
+    {
+      "key": [
+        "mipi"
+      ],
+      "count": 32
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 14
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 18
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 11
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "camera"
+      ],
+      "count": 23
+    },
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "display"
+      ],
+      "count": 26
+    },
+    {
+      "key": [
+        "eeprom"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "ethernet"
+      ],
+      "count": 14
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 103
+    },
+    {
+      "key": [
+        "hdmi"
+      ],
+      "count": 12
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 10
+    },
+    {
+      "key": [
+        "mipi"
+      ],
+      "count": 32
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 14
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 18
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 11
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "camera"
+      ],
+      "count": 23
+    },
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "display"
+      ],
+      "count": 26
+    },
+    {
+      "key": [
+        "eeprom"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "ethernet"
+      ],
+      "count": 14
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 101
+    },
+    {
+      "key": [
+        "hdmi"
+      ],
+      "count": 12
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 10
+    },
+    {
+      "key": [
+        "mipi"
+      ],
+      "count": 32
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 14
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 18
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 8
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 11
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "camera",
+      "debug",
+      "display",
+      "ethernet",
+      "power",
+      "sdcard",
+      "usb"
+    ],
+    "routed_required_families": [
+      "camera",
+      "debug",
+      "display",
+      "ethernet",
+      "power",
+      "sdcard",
+      "usb"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "camera"
+        ],
+        "count": 23
+      },
+      {
+        "key": [
+          "debug"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "display"
+        ],
+        "count": 26
+      },
+      {
+        "key": [
+          "eeprom"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "ethernet"
+        ],
+        "count": 14
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 103
+      },
+      {
+        "key": [
+          "hdmi"
+        ],
+        "count": 12
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 10
+      },
+      {
+        "key": [
+          "mipi"
+        ],
+        "count": 32
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 14
+      },
+      {
+        "key": [
+          "sdcard"
+        ],
+        "count": 18
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 8
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 11
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "camera"
+        ],
+        "count": 23
+      },
+      {
+        "key": [
+          "debug"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "display"
+        ],
+        "count": 26
+      },
+      {
+        "key": [
+          "eeprom"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "ethernet"
+        ],
+        "count": 14
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 101
+      },
+      {
+        "key": [
+          "hdmi"
+        ],
+        "count": 12
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 10
+      },
+      {
+        "key": [
+          "mipi"
+        ],
+        "count": 32
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 14
+      },
+      {
+        "key": [
+          "sdcard"
+        ],
+        "count": 18
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 8
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 11
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 0.9900990099009901,
+    "score": 1.0
+  }
+}

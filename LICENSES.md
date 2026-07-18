@@ -1,30 +1,15 @@
-# EDA Bench Licensing And Redistribution Notes
+# EDA-bench licensing and redistribution notes
 
-The benchmark harness code is separate from the upstream hardware design
-snapshots used as grading references. This code release does not vendor upstream
-PCB projects, canary submissions, source snapshots, or full task-pack archives.
+EDA-bench tasks are based on upstream hardware projects with mixed licenses. The benchmark does not transfer ownership of those projects.
 
-Runtime and full task packs are hosted in the Hugging Face dataset recorded in
-`tasks/task_pack_manifest.json`. Each full source-backed task pack records the
-upstream source URL, commit or release identifier, license label, and local
-license or attribution notes for the corresponding hardware design.
+Each native Harbor task records its upstream repository, pinned commit, and license in `dataset/<task_id>/task.toml`. Its reference KiCad project lives at `dataset/<task_id>/solution/reference/` and is copied only into the shared verifier image, never the evaluated agent environment.
 
-Published runtime task packs intentionally exclude reference projects, upstream
-source snapshots, canaries, and grader support code. They contain only the task
-prompt, task metadata, and a README. This keeps answer artifacts out of the
-mounted agent runtime.
+Before publishing or redistributing a task through the Harbor registry, review its `source_license` metadata and embedded reference project at:
 
-Public Python wheels and source distributions should also exclude
-`tasks/*/gold/**`, `third_party/upstream_designs/**`, `source_snapshot/**`, and
-canary answer submissions. `tests/test_public_artifacts.py` enforces this public
-build boundary.
+```text
+dataset/<task_id>/solution/reference/
+```
 
-Before republishing or redistributing full task packs, review the per-source
-license fields and notices inside each pack. Sources marked unlicensed,
-upstream-terms-only, noncommercial, or otherwise restricted should be handled
-conservatively: obtain explicit permission, replace redistributed snapshots with
-an acquisition script, or quarantine those reference artifacts from the public
-full pack.
+Some upstream projects use permissive, copyleft, open-hardware, Creative Commons, or project-specific terms. Preserve required notices and attribution. Do not publish a task whose upstream terms do not permit redistribution of its embedded reference project.
 
-Do not claim ownership of upstream hardware designs. Cite upstream owners and
-licenses for every task that uses a source-backed reference.
+The papers, reports, and benchmark wrappers remain governed by their own repository notices. Generated agent submissions remain subject to the policies and terms of the model, agent, and upstream material used to produce them.

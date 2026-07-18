@@ -1,121 +1,117 @@
-# EDA Bench
+# EDA-bench
 
-EDA Bench is a reproducible benchmark harness for evaluating web-enabled agents
-that produce KiCad PCB projects. The code runs model harnesses in a pinned Docker
-environment, downloads frozen task packs from Hugging Face, grades submitted
-KiCad projects with explicit I/O simulation oracles, and uploads run provenance.
+EDA-bench is a native [Harbor](https://www.harborframework.com/) dataset for evaluating agents on complete KiCad project construction. The repository contains the benchmark itself; Harbor supplies agent adapters, model configuration, sandbox lifecycle, retries, concurrency, trajectories, artifacts, result storage, and result inspection.
 
-This repository contains the public benchmark code artifact, paper PDF, and
-small media/result artifacts. The task dataset and dataset metadata live on
-Hugging Face at
-[`oof-baroomf/eda-bench-tasks`](https://huggingface.co/datasets/oof-baroomf/eda-bench-tasks).
-This repository does not vendor reference PCB projects, task-pack archives,
-grading answers, or duplicate dataset metadata.
+The active dataset is [`dataset/`](dataset). It contains 35 self-contained Harbor tasks and one benchmark-specific aggregate metric. There is no separate benchmark runner, provider harness, provenance uploader, or task download layer.
 
-## Contents
+## Install Harbor
 
-- `bench/`: runner, environment loading, provenance upload, and accounting
-- `harnesses/`: Codex CLI and Pi coding-agent harness definitions
-- `tasks/`: task-pack loading, source-backed task specs, and oracle code
-- `tests/`: regression tests for packaging, configuration, harnesses, runner,
-  task loading, and website generation
-- `website/`: static leaderboard generation from uploaded provenance
-- `tasks/task_pack_manifest.json`: pinned Hugging Face task-pack revision used
-  by the released code
-- `paper/main.pdf`: public paper PDF only; LaTeX sources are intentionally not
-  included in this repository
-- `artifacts/`: small public media/result artifacts used by the paper
-
-Dataset metadata such as `DATA_CARD.md`, `croissant.json`, and
-`task_catalog.json` is kept in the Hugging Face dataset, not duplicated here.
-
-## Reproducible Setup
-
-Install dependencies with the checked-in lockfile:
+The dataset is validated against Harbor 0.19.0:
 
 ```bash
-uv sync --dev
+uv tool install 'harbor==0.19.0'
 ```
 
-Build the agent execution image:
+Docker must be available for local runs. Until the versioned images are published, build the shared agent and verifier images once:
 
 ```bash
-docker build -t eda-bench-agent .
+./images/build.sh
 ```
 
-Create `.env` from `.env.example` and set the required private credentials for
-the harnesses you intend to run. At minimum, a Codex run needs:
+Every task then runs independently with ordinary Harbor using the image references in its own `task.toml`.
 
-- `EDA_BENCH_AGENT_IMAGE=eda-bench-agent`
-- `HF_PROVENANCE_REPO_ID`
-- `HF_TOKEN`
-- `CODEX_AUTH_JSON_B64`
+## Run the benchmark
 
-The task packs are resolved from `tasks/task_pack_manifest.json`. That manifest
-pins:
-
-- dataset repo: `oof-baroomf/eda-bench-tasks`
-- task-pack revision: `38bad28072e5c09657ef15fd56f9eb24841eaa48`
-- runtime path prefix: `task-packs/v2`
-- full grader path prefix: `full-task-packs/v2`
-
-## Basic Checks
-
-Run the test suite:
+Run the complete local dataset with any Harbor-supported agent and model:
 
 ```bash
-uv run pytest -q
+harbor run \
+  --path dataset \
+  --agent '<agent>' \
+  --model '<model>' \
+  --n-concurrent 4
 ```
 
-List available harnesses and tasks:
+Run one task while developing:
 
 ```bash
-uv run list-harnesses
-uv run list-tasks
+harbor run \
+  --path dataset/usb_c_female_breakout \
+  --agent '<agent>' \
+  --model '<model>'
 ```
 
-Run a single-task smoke evaluation:
+Run an oracle smoke test without configuring a model:
 
 ```bash
-uv run eval-harness \
-  --harness harnesses/codex/harnesses.py:gpt_5_5_web_high \
-  --task-id usb_c_female_breakout
+harbor run --path dataset/usb_c_female_breakout --agent oracle
 ```
 
-Run the built-in matrix:
+Harbor writes jobs to `jobs/` by default. Each trial includes its resolved configuration, trajectory, verifier output, declared `final_project` artifact, and reward. Inspect them with:
 
 ```bash
-uv run eval-matrix
+harbor view jobs
 ```
 
-Refresh the static website from uploaded provenance:
+## Task contract
+
+Each task asks the agent to create a complete KiCad project under:
+
+```text
+/workspace/final_project/
+```
+
+The task instruction names the required `.kicad_pro`, `.kicad_sch`, and `.kicad_pcb` files. The agent environment includes KiCad and ngspice.
+
+Grading runs in Harbor's `separate` verifier mode with networking disabled. Harbor stops the agent environment, transfers only the declared `/workspace/final_project` artifact, and starts the shared verifier image named in `task.toml`. The verifier evaluates the submitted schematic, PCB, connectivity, external I/O behavior, physical realization, ERC/DRC results, and task-specific functional contract. It writes:
+
+- `reward.json`: Harbor reward channels (`reward`, `overall_score`, `task_score`, `build_success`, and `submission_exists`)
+- `grading.json`: the complete deterministic grading record
+- `work/`: generated ERC, DRC, and ngspice evidence
+
+The verifier image contains the task reference project and scoring code. Those files are never mounted into the agent environment.
+
+## Dataset layout
+
+```text
+dataset/
+├── dataset.toml                 # Harbor dataset manifest and exact task digests
+├── metric.py                    # difficulty-weighted benchmark aggregation
+└── <task_id>/
+    ├── instruction.md
+    ├── task.toml                # Harbor schema, image refs, task selector
+    ├── environment/             # required Harbor directory; image is prebuilt
+    ├── contract/                # task-specific static and functional I/O data
+    └── solution/                # Harbor oracle and sole reference project
+
+images/                          # one agent image and one verifier image
+verifier/                        # one shared KiCad evaluator implementation
+```
+
+`dataset/` owns task-specific data, `verifier/` owns shared scoring logic, and `images/` owns container dependencies. Rebuild the images and refresh the manifest after changing any of them:
 
 ```bash
-uv run update-website
+harbor sync dataset
+git diff -- dataset/dataset.toml
 ```
 
-## Reproducibility Notes
+The custom metric preserves the benchmark's difficulty-weighted score: task rewards are weighted 1.0 for very easy, 1.5 for easy, 2.0 for medium, 3.0 for hard, 4.0 for very hard, and 5.0 for extreme. Missing rewards count as zero.
 
-The released code intentionally separates executable benchmark code from task
-artifacts. Evaluated agents receive only the runtime task pack for each task.
-Full grader packs, reference projects, canaries, contracts, and source snapshots
-are downloaded by the benchmark code for grading and auditability; they are not
-vendored in this repository or mounted into evaluated agent runtimes.
+## Publishing later
 
-Every run records the task-pack revision, local git commit, Docker image/tool
-versions, prompts, command lines, stdout/stderr, final projects, grading
-artifacts, and accounting summaries in the configured Hugging Face provenance
-dataset. Set `EDA_BENCH_UPLOAD_MODEL_TRANSCRIPTS=0` to replace raw model
-transcripts with byte-count summaries, and set
-`EDA_BENCH_UPLOAD_CONTAINER_IMAGES=0` to skip large Docker image tar uploads.
+Publishing is intentionally separate from development. When a release is approved, authenticate to the Harbor registry, verify the manifest is clean, and publish the public dataset:
 
-Scores are produced by explicit I/O simulation only. The current public task set
-uses an ngspice PCB-geometry plus behavioral transient I/O oracle. Reference
-designator matching, exact component inventory, footprint similarity, route
-shape, and outline similarity are diagnostic outputs, not primary scoring
-signals.
+```bash
+harbor auth login
+harbor auth status
+harbor sync dataset
+harbor publish dataset --public --tag '<version>'
+```
 
-The default benchmark is open-book: the built-in web harnesses may discover
-public upstream hardware projects. Results should therefore be interpreted as
-web-enabled task performance under fixed prompts, tooling, task-pack revision,
-and recorded provenance.
+Until a registry release exists, use `--path dataset`; do not use a registry dataset name.
+
+## Research artifacts
+
+The paper and `artifacts/` reports are retained research records. They are not executable benchmark infrastructure. New evaluations should use Harbor job results as the canonical run record.
+
+See [`DATA_CARD.md`](DATA_CARD.md) for scope, access policy, grading details, licensing, and limitations.

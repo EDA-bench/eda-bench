@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "task_id": "asac_fc_rev_b",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "debug",
+    "flash",
+    "gpio",
+    "power",
+    "spi",
+    "uart",
+    "usb"
+  ],
+  "scored_interface_families": [
+    "debug",
+    "gpio",
+    "power",
+    "uart",
+    "usb"
+  ],
+  "scored_routed_interface_families": [
+    "debug",
+    "gpio",
+    "power",
+    "uart",
+    "usb"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 10
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "m2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 3
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 10
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "m2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 3
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "debug"
+      ],
+      "count": 3
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 10
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "m2"
+      ],
+      "count": 1
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 5
+    },
+    {
+      "key": [
+        "uart"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "usb"
+      ],
+      "count": 3
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "debug",
+      "gpio",
+      "power",
+      "uart",
+      "usb"
+    ],
+    "routed_required_families": [
+      "debug",
+      "gpio",
+      "power",
+      "uart",
+      "usb"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "debug"
+        ],
+        "count": 3
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 10
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "m2"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 5
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 4
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 3
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "debug"
+        ],
+        "count": 3
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 10
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "m2"
+        ],
+        "count": 1
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 5
+      },
+      {
+        "key": [
+          "uart"
+        ],
+        "count": 4
+      },
+      {
+        "key": [
+          "usb"
+        ],
+        "count": 3
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 1.0,
+    "score": 1.0
+  }
+}

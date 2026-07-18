@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "task_id": "cm4_lvds_adapter",
+  "contract_kind": "task_semantic_external_io_function",
+  "required_interface_families": [
+    "display",
+    "mipi",
+    "power"
+  ],
+  "scored_interface_families": [
+    "display",
+    "mipi",
+    "power"
+  ],
+  "scored_routed_interface_families": [
+    "display",
+    "mipi",
+    "power"
+  ],
+  "reference_interface_family_profile": [
+    {
+      "key": [
+        "display"
+      ],
+      "count": 33
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 15
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "mipi"
+      ],
+      "count": 28
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 4
+    }
+  ],
+  "reference_external_net_family_profile": [
+    {
+      "key": [
+        "display"
+      ],
+      "count": 33
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 15
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "mipi"
+      ],
+      "count": 28
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 4
+    }
+  ],
+  "reference_routed_external_net_family_profile": [
+    {
+      "key": [
+        "display"
+      ],
+      "count": 33
+    },
+    {
+      "key": [
+        "gpio"
+      ],
+      "count": 15
+    },
+    {
+      "key": [
+        "i2c"
+      ],
+      "count": 2
+    },
+    {
+      "key": [
+        "mipi"
+      ],
+      "count": 28
+    },
+    {
+      "key": [
+        "power"
+      ],
+      "count": 4
+    },
+    {
+      "key": [
+        "sdcard"
+      ],
+      "count": 4
+    }
+  ],
+  "reference_functional_summary": {
+    "required_families": [
+      "display",
+      "mipi",
+      "power"
+    ],
+    "routed_required_families": [
+      "display",
+      "mipi",
+      "power"
+    ],
+    "external_net_family_profile": [
+      {
+        "key": [
+          "display"
+        ],
+        "count": 33
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 15
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "mipi"
+        ],
+        "count": 28
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 4
+      },
+      {
+        "key": [
+          "sdcard"
+        ],
+        "count": 4
+      }
+    ],
+    "routed_external_net_family_profile": [
+      {
+        "key": [
+          "display"
+        ],
+        "count": 33
+      },
+      {
+        "key": [
+          "gpio"
+        ],
+        "count": 15
+      },
+      {
+        "key": [
+          "i2c"
+        ],
+        "count": 2
+      },
+      {
+        "key": [
+          "mipi"
+        ],
+        "count": 28
+      },
+      {
+        "key": [
+          "power"
+        ],
+        "count": 4
+      },
+      {
+        "key": [
+          "sdcard"
+        ],
+        "count": 4
+      }
+    ],
+    "interface_presence_score": 1.0,
+    "routed_presence_score": 1.0,
+    "route_coverage_score": 1.0,
+    "score": 1.0
+  }
+}

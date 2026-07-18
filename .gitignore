@@ -1,9 +1,11 @@
 .env
+.tmp/
 .venv/
-__pycache__/
 .pytest_cache/
 .ruff_cache/
-.tmp/
-dist/
-build/
+__pycache__/
 *.pyc
+jobs/
+.cache/
+logs/
+outputs/
